@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uYL-s1-SPP">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item 2-->
+        <scene sceneID="vDk-Ys-7cQ">
+            <objects>
+                <viewController id="gUl-qu-nIP" customClass="SearchViewController" customModule="TwitterClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="66V-nS-har">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AxG-5X-l9y">
+                                <rect key="frame" x="128" y="460" width="69" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Search"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xVe-bk-E0k"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="J69-NX-HC4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9kc-e5-HNj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1143" y="856"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="duK-bw-Xeg">
+            <objects>
+                <viewController id="K6o-18-3yu" customClass="NotificationsViewController" customModule="TwitterClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="u6N-HQ-GRi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dzc-sI-Wg5">
+                                <rect key="frame" x="90" y="436" width="106" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Notifications"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XnY-ay-x54"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="9sg-g7-oMr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CpV-M1-Bix" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1845" y="856"/>
+        </scene>
+        <!--Registration View Controller-->
+        <scene sceneID="bxP-bk-H87">
+            <objects>
+                <viewController id="PHJ-yN-kZp" customClass="RegistrationViewController" customModule="TwitterClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9wU-eX-HHK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WiG-k2-gtY">
+                                <rect key="frame" x="146" y="753" width="78" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Register"/>
+                                <connections>
+                                    <action selector="registerButtonClick:" destination="PHJ-yN-kZp" eventType="touchUpInside" id="MJB-qO-pYu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="z15-7l-23r"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="registerButton" destination="WiG-k2-gtY" id="2BD-Vt-YxQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jPg-UJ-Jew" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="793" y="115"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Lu8-TP-5SY">
+            <objects>
+                <tabBarController storyboardIdentifier="TabbarVC" id="ROD-Ul-y8G" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="NmT-iA-u14"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TCY-g7-3i3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="K6o-18-3yu" kind="relationship" relationship="viewControllers" id="XLu-ab-OoX"/>
+                        <segue destination="gUl-qu-nIP" kind="relationship" relationship="viewControllers" id="MRe-84-YvB"/>
+                        <segue destination="Z67-a4-3kG" kind="relationship" relationship="viewControllers" id="pTz-l3-awD"/>
+                        <segue destination="4y3-GO-pNI" kind="relationship" relationship="viewControllers" id="vpA-ff-r8J"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ydh-Sg-Pqp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1501" y="115"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="e5J-xf-73Z">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="uYL-s1-SPP" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ULv-iT-PLk">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="SSB-CH-zQZ" kind="relationship" relationship="rootViewController" id="cgD-rT-DJk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mVa-fb-Usv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-657" y="115"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="5aV-nr-SAR">
+            <objects>
+                <viewController id="SSB-CH-zQZ" customClass="LoginViewController" customModule="TwitterClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iih-4i-Rc4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="80d-cP-ZOR">
+                                <rect key="frame" x="177" y="432.5" width="60" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Login"/>
+                                <connections>
+                                    <action selector="loginButtonClick:" destination="SSB-CH-zQZ" eventType="touchUpInside" id="wdL-Jt-pd0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7wI-ut-tyC">
+                                <rect key="frame" x="168" y="471" width="78" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Register"/>
+                                <connections>
+                                    <action selector="registerButtonClick:" destination="SSB-CH-zQZ" eventType="touchUpInside" id="A83-NF-78M"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8PA-hV-LBO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="80d-cP-ZOR" firstAttribute="centerY" secondItem="iih-4i-Rc4" secondAttribute="centerY" id="57T-CQ-2pk"/>
+                            <constraint firstItem="80d-cP-ZOR" firstAttribute="centerX" secondItem="iih-4i-Rc4" secondAttribute="centerX" id="PtL-jL-1GK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="AK3-nT-0WF"/>
+                    <connections>
+                        <outlet property="loginButton" destination="80d-cP-ZOR" id="ACr-RZ-iRg"/>
+                        <outlet property="registerButton" destination="7wI-ut-tyC" id="eG3-bD-7ex"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RpU-6W-d6y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="73.913043478260875" y="114.50892857142857"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="MoC-j0-6xZ">
+            <objects>
+                <viewController id="Z67-a4-3kG" customClass="HomePageViewController" customModule="TwitterClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qjO-3X-AE8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ww0-zE-h0x">
+                                <rect key="frame" x="175.5" y="432.5" width="63" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Home"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7OU-B7-dBd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ww0-zE-h0x" firstAttribute="centerY" secondItem="qjO-3X-AE8" secondAttribute="centerY" id="ciO-4k-2Vy"/>
+                            <constraint firstItem="Ww0-zE-h0x" firstAttribute="centerX" secondItem="qjO-3X-AE8" secondAttribute="centerX" id="eyx-75-tpK"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="wUR-zO-UUf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5ve-tO-edf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="435" y="857"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="UbA-w9-wKn">
+            <objects>
+                <viewController id="4y3-GO-pNI" customClass="MessagesViewController" customModule="TwitterClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ipu-mP-7Ps">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ea-3I-oio">
+                                <rect key="frame" x="135" y="398" width="90" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Messages"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bo3-fL-P1H"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="YFG-dp-npI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zc7-iA-XDx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2552" y="856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
